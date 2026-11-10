@@ -30,16 +30,14 @@ The repo has 2 files:
 1. Open `Example.lua` and set `LIB_URL` to the raw link of `BumpUI.lua` in your repo:
 
 ```lua
-local LIB_URL = "https://raw.githubusercontent.com/<user>/<repo>/main/BumpUI.lua"
+local LIB_URL = "https://raw.githubusercontent.com/sweetbutrotting/BumpUi/refs/heads/main/BumpUI%20MAIN.lua"
 ```
 
 2. Run it with your executor:
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/<user>/<repo>/main/Example.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sweetbutrotting/BumpUi/refs/heads/main/BumpUI%20MAIN.lua"))()
 ```
-
-> The repo must be **public** for `HttpGet` to download the files.
 
 ## Quick start
 
@@ -149,15 +147,6 @@ The options are at the top of `BumpUI.lua`:
 | `IMAGE_OVERRIDES` | Force a specific image id for a decal id |
 | `FONT`, `FONT_BOLD` | Fonts |
 
-### Decal not showing?
-
-IDs from the Creator Dashboard are usually **Decal ids**, while an `ImageLabel` needs the **Image id**. The script tries several methods to find the image id behind a decal and prints the result in the console (`[BumpUI] ... OK via ...`). If every method fails, that image is hidden and a warning is printed. In that case, fill it in manually in `IMAGE_OVERRIDES`:
-
-```lua
-local IMAGE_OVERRIDES = {
-	["<decal id>"] = "<image id>",
-}
-```
 
 ## Executor requirements
 
