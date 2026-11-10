@@ -2275,7 +2275,7 @@ task.spawn(function()
 			local url, ok, how = resolveImage(id)
 			resolved[id] = url
 			if ok then
-				print("[BumpUI] " .. id .. " OK via " .. how)
+				--print("[BumpUI] " .. id .. " OK via " .. how)
 			else
 				failed[id] = true
 				warn("[BumpUI] Could not find an image for " .. id .. " (" .. how .. "). It will be hidden. Put its Image id in IMAGE_OVERRIDES.")
