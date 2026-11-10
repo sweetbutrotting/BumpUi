@@ -41,7 +41,7 @@ end)
 ----------------------------------------------------------------
 local CONFIG = {
 	Title = "Bump",
-	Subtitle = "VANTA",
+	Subtitle = "Bump",
 	ConfigFile = "Bumps/ui.json", -- small file with the window prefs (preset, size, position...)
 	LegacyFile = "BumpUI_config.json",
 	MenuKey = Enum.KeyCode.RightControl, -- default key that shows / hides the UI
@@ -65,7 +65,7 @@ local FONT = Enum.Font.Gotham
 local FONT_BOLD = Enum.Font.GothamMedium
 
 -- Load screen image
-local LOAD_IMAGES = { "103653080170339" }
+local LOAD_IMAGES = { "89562138872061" }
 
 -- 6 presets: each preset = 2 decals (logo = next to the title, deco = bottom-right corner)
 local PRESETS = {
